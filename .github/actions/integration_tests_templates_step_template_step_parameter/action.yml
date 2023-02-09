@@ -1,0 +1,15 @@
+name: integration_tests_templates_step_template_step_parameter
+inputs:
+  message:
+    required: false
+    default: "...."
+    type: string
+runs:
+  using: composite
+  steps:
+  - run: echo "first template step"
+    shell: bash
+  - run: echo "${{ inputs.message }}"
+    shell: bash
+  - run: echo "last template step"
+    shell: bash
