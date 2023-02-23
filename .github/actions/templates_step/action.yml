@@ -1,0 +1,6 @@
+name: templates_step
+runs:
+  using: composite
+  steps:
+  - run: echo "This is an important step"
+    shell: bash
