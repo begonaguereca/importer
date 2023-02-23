@@ -1,0 +1,6 @@
+name: integration_tests_templates_simple_step
+runs:
+  using: composite
+  steps:
+  - run: echo "You have finally arrived!"
+    shell: bash
